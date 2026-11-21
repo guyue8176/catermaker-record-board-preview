@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="卡特马克唱片圆形菜板三条短视频投放候选，包含成片、脚本依据与质检状态。">
+  <meta property="og:title" content="卡特马克唱片菜板｜三条投放候选">
+  <meta property="og:description" content="基于高消耗成片结构重新制作的 3 条短视频投放候选。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="posters/final_aesthetic_storage-contact-sheet.jpg">
+  <title>卡特马克唱片菜板｜三条投放候选</title>
+  <style>
+    :root {
+      --ink:#1f1d19; --muted:#746d63; --paper:#f3eee4; --card:#fffdf8;
+      --line:#ddd4c6; --orange:#e55d2c; --orange-soft:#ffe1d4;
+      --green:#286b4b; --green-soft:#dceee4; --yellow:#f2c64b;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0; color:var(--ink); background:
+      radial-gradient(circle at 5% 5%,rgba(242,198,75,.23),transparent 28rem),
+      radial-gradient(circle at 95% 20%,rgba(229,93,44,.12),transparent 30rem),var(--paper);
+      font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+      line-height:1.6;
+    }
+    .shell { width:min(1240px,calc(100% - 40px)); margin:auto; }
+    .top {
+      position:sticky; top:0; z-index:20; backdrop-filter:blur(16px);
+      background:rgba(243,238,228,.9); border-bottom:1px solid var(--line);
+    }
+    .top-inner { min-height:66px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:850; }
+    .mark { width:37px;height:37px;border-radius:11px;background:var(--ink);color:white;display:grid;place-items:center; }
+    .nav { display:flex; gap:15px; flex-wrap:wrap; font-size:12px; color:var(--muted); }
+    .nav a { color:inherit; text-decoration:none; }
+    .nav a:hover { color:var(--ink); }
+    .hero { padding:72px 0 38px; }
+    .eyebrow { display:inline-flex; align-items:center; gap:8px;padding:7px 11px;border-radius:999px;background:var(--green-soft);color:var(--green);font-size:11px;font-weight:850;letter-spacing:.07em; }
+    .eyebrow::before { content:"";width:7px;height:7px;border-radius:50%;background:var(--green); }
+    h1 { max-width:970px;margin:20px 0 14px;font-family:"Songti SC","STSong",Georgia,serif;font-size:clamp(44px,7vw,80px);line-height:1.05;letter-spacing:-.045em; }
+    .hero p { max-width:850px;margin:0;color:var(--muted);font-size:17px; }
+    .stats { margin-top:32px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px; }
+    .stat { padding:17px 19px;border:1px solid var(--line);border-radius:17px;background:rgba(255,253,248,.76); }
+    .stat strong { display:block;font-size:24px;letter-spacing:-.03em; }
+    .stat span { color:var(--muted);font-size:11px; }
+    section { padding:54px 0; }
+    .section-head { display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px; }
+    .kicker { margin:0 0 8px;color:var(--orange);font-weight:850;font-size:11px;letter-spacing:.12em;text-transform:uppercase; }
+    h2 { margin:0;font-family:"Songti SC","STSong",Georgia,serif;font-size:clamp(31px,4vw,48px);line-height:1.15;letter-spacing:-.03em; }
+    .section-head p { max-width:520px;margin:0;color:var(--muted);font-size:13px; }
+    .video-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px; }
+    .video-card { overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:23px;box-shadow:0 20px 55px rgba(50,39,23,.1); }
+    .frame { padding:17px 17px 0;background:linear-gradient(145deg,#25231f,#4b453c);position:relative; }
+    .index { position:absolute;top:27px;left:27px;z-index:2;padding:5px 8px;border-radius:7px;background:rgba(0,0,0,.73);color:white;font-size:10px;font-weight:850; }
+    video { display:block;width:100%;aspect-ratio:9/16;max-height:620px;object-fit:contain;border-radius:14px;background:#111; }
+    .video-body { padding:18px 20px 21px; }
+    .video-body h3 { margin:0 0 5px;font-size:19px; }
+    .video-body p { margin:0;color:var(--muted);font-size:13px; }
+    .tags { display:flex;flex-wrap:wrap;gap:6px;margin-top:13px; }
+    .tag { padding:4px 8px;border-radius:999px;background:#eee7db;color:#5b554b;font-size:10px;font-weight:800; }
+    .tag.good { background:var(--green-soft);color:var(--green); }
+    .tag.hot { background:var(--orange-soft);color:#9b3b1d; }
+    .downloads { display:flex;flex-wrap:wrap;gap:8px;margin-top:14px; }
+    .downloads a {
+      display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;
+      border:1px solid var(--line);background:#f3eee4;color:var(--ink);
+      font-size:10px;font-weight:800;text-decoration:none;
+    }
+    .downloads a:hover { border-color:var(--ink); }
+    .script-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px; }
+    .script { padding:22px;background:var(--card);border:1px solid var(--line);border-radius:20px; }
+    .script h3 { margin:0 0 7px;font-size:18px; }
+    .script .basis { color:var(--orange);font-size:10px;font-weight:800; }
+    .script ol { margin:16px 0 0;padding-left:20px; }
+    .script li { margin:8px 0;color:#4e483f;font-size:13px; }
+    .table-wrap { overflow:auto;border-radius:20px;border:1px solid var(--line); }
+    table { width:100%;border-collapse:collapse;background:var(--card); }
+    th,td { padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;font-size:12px; }
+    th { background:#eee8dc;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.05em; }
+    tr:last-child td { border-bottom:0; }
+    .check-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:12px; }
+    .check { padding:17px;border-radius:16px;background:var(--card);border:1px solid var(--line);font-size:12px; }
+    .check strong { display:block;margin-bottom:4px;color:var(--green); }
+    .note { margin-top:18px;padding:15px 17px;border-left:3px solid var(--yellow);background:#fff7da;color:#665321;font-size:12px;border-radius:0 12px 12px 0; }
+    footer { padding:30px 0 42px;color:var(--muted);font-size:11px; }
+    @media (max-width:900px) {
+      .stats,.video-grid,.script-grid,.check-grid { grid-template-columns:1fr 1fr; }
+      .video-grid .video-card:last-child { grid-column:1/-1; }
+      video { max-height:none; }
+    }
+    @media (max-width:640px) {
+      .shell { width:calc(100% - 24px); }
+      .nav { display:none; }
+      .stats,.video-grid,.script-grid,.check-grid { grid-template-columns:1fr; }
+      .video-grid .video-card:last-child { grid-column:auto; }
+      .section-head { flex-direction:column;align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="shell top-inner">
+      <div class="brand"><span class="mark">▶︎</span><span>唱片圆形菜板 · 投放候选</span></div>
+      <nav class="nav"><a href="#videos">看成片</a><a href="#basis">样本依据</a><a href="#scripts">脚本</a><a href="#checks">质检</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <span class="eyebrow">基于总消耗降序 · 3 条新成片</span>
+      <h1>高消耗样本的脚本规律，<br>已经变成三条可测试的新素材。</h1>
+      <p>从卡特马克唱片圆形菜板的头部成片中提炼高颜值、小厨房和购买决策三套结构，用素材库重新组片，并补齐同步口播、字幕和独立配乐。</p>
+      <div class="stats">
+        <div class="stat"><strong>5</strong><span>头部消耗样本已拆解</span></div>
+        <div class="stat"><strong>3</strong><span>差异化投放候选</span></div>
+        <div class="stat"><strong>24.9–29.4s</strong><span>投放时长</span></div>
+        <div class="stat"><strong>-16 LUFS</strong><span>音频响度约值</span></div>
+      </div>
+    </section>
+
+    <section class="shell" id="videos">
+      <div class="section-head">
+        <div><p class="kicker">Final candidates</p><h2>三条投放候选</h2></div>
+        <p>三条之间素材重叠率最高 50%，口播主轴和镜头证据链均不同。建议在千川作为独立创意测试。</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="frame"><span class="index">A / 颜值收纳</span><video controls playsinline preload="metadata" poster="posters/final_aesthetic_storage-contact-sheet.jpg" src="videos/web/final_aesthetic_storage.mp4"></video></div>
+          <div class="video-body">
+            <h3>高颜值与收纳</h3>
+            <p>先用完整厨房建立视觉吸引，再以双盘面、归位、接水盘和清洁连续落地。</p>
+            <div class="tags"><span class="tag hot">29.42 秒</span><span class="tag">10 镜头</span><span class="tag good">音画同步</span></div>
+            <div class="downloads"><a href="https://github.com/guyue8176/catermaker-record-board-preview/releases/download/v1.0.0/final_aesthetic_storage.mp4" target="_blank" rel="noreferrer">下载 1080P 成片</a></div>
+          </div>
+        </article>
+        <article class="video-card">
+          <div class="frame"><span class="index">B / 小厨房</span><video controls playsinline preload="metadata" poster="posters/final_small_kitchen-contact-sheet.jpg" src="videos/web/final_small_kitchen.mp4"></video></div>
+          <div class="video-body">
+            <h3>小厨房省台面</h3>
+            <p>直接从小空间占台面切入，依次展示一体收纳、双面使用、沥水和清洗。</p>
+            <div class="tags"><span class="tag hot">24.89 秒</span><span class="tag">8 镜头</span><span class="tag good">痛点直击</span></div>
+            <div class="downloads"><a href="https://github.com/guyue8176/catermaker-record-board-preview/releases/download/v1.0.0/final_small_kitchen.mp4" target="_blank" rel="noreferrer">下载 1080P 成片</a></div>
+          </div>
+        </article>
+        <article class="video-card">
+          <div class="frame"><span class="index">C / 决策证据</span><video controls playsinline preload="metadata" poster="posters/final_decision_proof-contact-sheet.jpg" src="videos/web/final_decision_proof.mp4"></video></div>
+          <div class="video-body">
+            <h3>购买决策与证据</h3>
+            <p>以“每天是否顺手”开题，用不同盘面、材质和清洁路径回答购买疑问。</p>
+            <div class="tags"><span class="tag hot">26.27 秒</span><span class="tag">8 镜头</span><span class="tag good">高意向承接</span></div>
+            <div class="downloads"><a href="https://github.com/guyue8176/catermaker-record-board-preview/releases/download/v1.0.0/final_decision_proof.mp4" target="_blank" rel="noreferrer">下载 1080P 成片</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell" id="basis">
+      <div class="section-head">
+        <div><p class="kicker">Benchmarks</p><h2>头部样本依据</h2></div>
+        <p>数据为 2026-11-21 工作台读取值；ROI 为当前明细值，可能与列表缓存值存在短暂差异。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>成片 ID</th><th>消耗</th><th>ROI</th><th>总成交</th><th>完播率</th><th>主要结构</th></tr></thead>
+          <tbody>
+            <tr><td>47630459</td><td>¥1,530.93</td><td>4.61</td><td>¥7,061.10</td><td>26.28%</td><td>高颜值 + 功能快切</td></tr>
+            <tr><td>40947867</td><td>¥1,198.54</td><td>5.67</td><td>¥6,212.36</td><td>41.92%</td><td>直播机制 + 一体收纳</td></tr>
+            <tr><td>38150214</td><td>¥863.68</td><td>4.21</td><td>¥3,173.58</td><td>22.32%</td><td>金句开屏 + 多卖点</td></tr>
+            <tr><td>40398748</td><td>¥837.59</td><td>5.84</td><td>¥4,610.31</td><td>42.10%</td><td>痛点直击 + 快速证据</td></tr>
+            <tr><td>30941811</td><td>¥833.02</td><td>4.92</td><td>¥3,810.78</td><td>21.61%</td><td>真人场景 + 口播</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">三条新片没有复制样本中的历史价格、赠品和促销口径，只保留可由素材库画面和标签直接验证的产品结构、双面使用、收纳及清洁路径。</div>
+    </section>
+
+    <section class="shell" id="scripts">
+      <div class="section-head">
+        <div><p class="kicker">Voiceover</p><h2>成片口播脚本</h2></div>
+        <p>完整逐镜头表与时间码见 <a href="scripts.md"><code>scripts.md</code></a>。</p>
+      </div>
+      <div class="script-grid">
+        <article class="script">
+          <h3>A. 高颜值与收纳</h3>
+          <span class="basis">参考 47630459 / 40398748</span>
+          <ol>
+            <li>厨房台面想好看，又不想每天收拾一堆工具？</li>
+            <li>这套唱片菜板，把菜板和收纳做成了一体。</li>
+            <li>一块是高颜值玻璃面，另一块是实木棋盘格面。</li>
+            <li>玻璃面切水果熟食，木纹面切配备菜。</li>
+            <li>用完立回底座，接水盘可抽出，清洁更省事。</li>
+            <li>想要兼顾颜值和收纳，点商品卡看完整组合。</li>
+          </ol>
+        </article>
+        <article class="script">
+          <h3>B. 小厨房省台面</h3>
+          <span class="basis">参考 40947867 / 38150214</span>
+          <ol>
+            <li>厨房不大，菜板和沥水盘总把台面占满？</li>
+            <li>立式收纳设计，两块菜板收进一个底座。</li>
+            <li>玻璃面处理水果熟食，木纹面切配备菜。</li>
+            <li>切完直接归位，台面不再堆东西。</li>
+            <li>接水盘可抽出，冲完水放回底座。</li>
+            <li>小厨房想少占地方，点商品卡看尺寸。</li>
+          </ol>
+        </article>
+        <article class="script">
+          <h3>C. 购买决策与证据</h3>
+          <span class="basis">参考 40398748 / 30941811</span>
+          <ol>
+            <li>菜板不只要好看，关键是每天用着顺不顺手。</li>
+            <li>木纹面切肉备菜，玻璃面处理水果熟食。</li>
+            <li>双盘面纹理清晰，使用分区一眼看懂。</li>
+            <li>配收纳底座和接水托盘，洗完不用堆台面。</li>
+            <li>备菜、切配、清洁归位，一套走完。</li>
+            <li>想换一套好看又好收拾的菜板，点商品卡。</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell" id="checks">
+      <div class="section-head">
+        <div><p class="kicker">Delivery checks</p><h2>投放前技术状态</h2></div>
+        <p>外部上传没有执行；以下结果来自本地成片检测。</p>
+      </div>
+      <div class="check-grid">
+        <div class="check"><strong>✓ 画面规格</strong>1080×1920、30fps、H.264、yuv420p</div>
+        <div class="check"><strong>✓ 音频规格</strong>AAC 48kHz 立体声，约 -16 LUFS</div>
+        <div class="check"><strong>✓ 音画对齐</strong>按逐句口播时长生成镜头段，无音轨截断</div>
+        <div class="check"><strong>✓ 差异控制</strong>三条素材集合两两重叠 37.5%–50%</div>
+        <div class="check"><strong>✓ 内容安全</strong>未使用价格、赠品、抗菌或性能承诺</div>
+        <div class="check"><strong>待业务确认</strong>当期商品组合、商品卡、详情页与封面选择</div>
+      </div>
+    </section>
+  </main>
+  <footer class="shell">卡特马克 / CM-砧板 / 唱片圆形菜板 · 2026-11-21 · 内部投放候选</footer>
+</body>
+</html>
